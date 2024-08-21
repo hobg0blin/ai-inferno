@@ -18,7 +18,6 @@ export default function Home() {
   const [helpModalOpen, setHelpModalOpen] = useState(false);
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between font-body game-background">
-
       <ReactModal
         isOpen={helpModalOpen}
         onRequestClose={() => setHelpModalOpen(false)}
@@ -29,8 +28,8 @@ export default function Home() {
         <div className="font-body">
           <h1 className="text-center text-6xl font-bold font-display game-title">Help</h1>
           <p>
-            Welcome to AI Inferno. AI Inferno supports both anonymous <i>spectators</i> and logged in{' '}
-            <i>interactivity</i>.
+            Welcome to AI Inferno. AI Inferno supports both anonymous <i>spectators</i> and logged
+            in <i>interactivity</i>.
           </p>
           <h2 className="text-4xl mt-4">Spectating</h2>
           <p>
@@ -56,7 +55,10 @@ export default function Home() {
             AI Inferno only supports {MAX_HUMAN_PLAYERS} humans at a time. If you're idle for five
             minutes, you'll be automatically removed from the simulation.
           </p>
-          <p>AI Inferno is an adaptation of the original <a href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit.</p>
+          <p>
+            AI Inferno is an adaptation of the original{' '}
+            <a href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit.
+          </p>
         </div>
       </ReactModal>
       {/*<div className="p-3 absolute top-0 right-0 z-10 text-2xl">
@@ -69,7 +71,7 @@ export default function Home() {
         </Unauthenticated>
       </div> */}
 
-      <div className="w-full lg:h-screen min-h-screen relative isolate overflow-hidden lg:p-8 shadow-2xl flex flex-col justify-start">
+      <div className="w-full lg:h-screen min-h-screen relative isolate lg:p-8 shadow-2xl flex flex-col justify-start">
         <h1 className="mx-auto text-4xl p-3 sm:text-8xl lg:text-9xl font-bold font-display leading-none tracking-wide game-title w-full text-left sm:text-center sm:w-auto">
           AI Inferno
         </h1>
@@ -88,14 +90,14 @@ export default function Home() {
           <div className="flex gap-4 flex-grow pointer-events-none">
             <FreezeButton />
             <MusicButton />
-           <InteractButton />
+            <InteractButton />
             <Button imgUrl={helpImg} onClick={() => setHelpModalOpen(true)}>
               Help
             </Button>
           </div>
         </footer>
 
-       <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark" />
+        <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark" />
       </div>
     </main>
   );

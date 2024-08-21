@@ -57,6 +57,10 @@ export const Player = ({
   const isSpeaking = !![...game.world.conversations.values()].find(
     (c) => c.isTyping?.playerId === player.id,
   );
+  let convo = [...game.world.conversations.values()].find(
+    (c) => c.isTyping?.playerId === player.id,
+  );
+  //  console.log('convo', convo);
   const isThinking =
     !isSpeaking &&
     !![...game.world.agents.values()].find(
@@ -73,6 +77,7 @@ export const Player = ({
         isMoving={historicalLocation.speed > 0}
         isThinking={isThinking}
         isSpeaking={isSpeaking}
+        //       lastMessage={convo?.lastMessage}
         emoji={
           player.activity && player.activity.until > (historicalTime ?? Date.now())
             ? player.activity?.emoji

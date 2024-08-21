@@ -7,6 +7,7 @@ import { api, internal } from '../_generated/api';
 import * as embeddingsCache from './embeddingsCache';
 import { GameId, conversationId, playerId } from '../aiTown/ids';
 import { NUM_MEMORIES_TO_SEARCH } from '../constants';
+import { rollupVersion } from 'vite';
 
 const selfInternal = internal.agent.conversation;
 
@@ -52,6 +53,26 @@ export async function startConversationMessage(
       `Be sure to include some detail or question about a previous conversation in your greeting.`,
     );
   }
+  console.log('Player starting conversation: ', player);
+  console.log('With other player: ', otherPlayer);
+  if (player.role == 'human' && otherPlayer.role == 'human') {
+    prompt.push(`You are both humans being tortured in Hell for your sins.`);
+  } else if (player.role == 'human' && otherPlayer.role == 'demon') {
+    prompt.push(
+      'You are talking to a demon, responsible for torturing and tricking you. You may want to try to please them or try to fight back against them, but you should not trust them.',
+    );
+  } else if (player.role == 'demon' && otherPlayer.role == 'human') {
+    prompt.push(
+      'You are talking to a human, one of the souls you are responsible for ensuring is in eternal torment.',
+    );
+  } else if (player.role == 'demon' && otherPlayer.role == 'demon') {
+    prompt.push(
+      'You are talking to another demon. Demons are constantly plotting to overtake one another in the hierarchy of Hell and please Lucifer Morningstar.',
+    );
+  } else {
+    prompt.push('');
+  }
+
   prompt.push(`${player.name}:`);
 
   const { content } = await chatCompletion({
@@ -324,8 +345,12 @@ export const queryPromptData = internalQuery({
       }
     }
     return {
-      player: { name: playerDescription.name, ...player },
-      otherPlayer: { name: otherPlayerDescription.name, ...otherPlayer },
+      player: { name: playerDescription.name, role: playerDescription.role, ...player },
+      otherPlayer: {
+        name: otherPlayerDescription.name,
+        role: otherPlayerDescription.role,
+        ...otherPlayer,
+      },
       conversation,
       agent: { identity: agentDescription.identity, plan: agentDescription.plan, ...agent },
       otherAgent: otherAgent && {

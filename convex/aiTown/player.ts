@@ -62,7 +62,6 @@ export class Player {
   human?: string;
   pathfinding?: Pathfinding;
   activity?: Activity;
-
   lastInput: number;
 
   position: Point;
@@ -171,6 +170,7 @@ export class Player {
     name: string,
     character: string,
     description: string,
+    role: string,
     tokenIdentifier?: string,
   ) {
     if (tokenIdentifier) {
@@ -231,6 +231,7 @@ export class Player {
         character,
         description,
         name,
+        role,
       }),
     );
     game.descriptionsModified = true;
@@ -269,10 +270,19 @@ export const playerInputs = {
       name: v.string(),
       character: v.string(),
       description: v.string(),
+      role: v.string(),
       tokenIdentifier: v.optional(v.string()),
     },
     handler: (game, now, args) => {
-      Player.join(game, now, args.name, args.character, args.description, args.tokenIdentifier);
+      Player.join(
+        game,
+        now,
+        args.name,
+        args.character,
+        args.description,
+        args.role,
+        args.tokenIdentifier,
+      );
       return null;
     },
   }),

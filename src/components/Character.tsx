@@ -12,6 +12,7 @@ export const Character = ({
   isMoving = false,
   isThinking = false,
   isSpeaking = false,
+  // lastMessage = null,
   emoji = '',
   isViewer = false,
   speed = 0.1,
@@ -49,6 +50,7 @@ export const Character = ({
       await sheet.parse();
       setSpriteSheet(sheet);
     };
+    console.log('sheet: ', textureUrl);
     void parseSheet();
   }, []);
 
