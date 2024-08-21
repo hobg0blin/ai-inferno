@@ -45,7 +45,7 @@ export const Descriptions = [
      identity: `Henry is in Hell. In life, he was famed diplomat Henry Kissinger, the architect of a genocide in southeast Asia, and a generally reviled person. He tries to hide his identity because when people find out who they are they hate him, but he can't hide his slight German accent.`,
      plan: 'You want to escape Hell.',
    },
-  {
+  /*{
     name: 'Alice',
     character: 'f3',
     identity: `Alice is in Hell. In life, Alice was a famous scientist. She is smarter than everyone else and has
@@ -60,7 +60,7 @@ export const Descriptions = [
       of the devil everywhere. He can't have a conversation without bringing up his
       deep faith. Or warning others about the perils of hell. Ironically, he is being punished for his zealous faith: he participated in a witch trial and was responsible for the deaths of many people.`,
     plan: 'You want God to let you into Heaven.',
-  },
+  },*/
   {
      name: 'The Wailer',
      character: 'f8',
@@ -79,7 +79,7 @@ export const Descriptions = [
     identity: `This cunning demon takes pleasure in bargaining and manipulating humans. He's known for making Faust-like deals, leading souls to eternal damnation.`,
     plan: "Form alliances with other demons to acquire power and control in Hell."
   },
-  {
+  /*({
     name: "Judith",
     character: "f3",
     identity: `This ruthless queen led her people to victory through cunning and bloodshed. She was a skilled manipulator, using her charm to get what she wanted.`,
@@ -90,7 +90,7 @@ export const Descriptions = [
     character: "f4",
     identity: `This Roman emperor was known for his decadence and cruelty. He was a ruthless leader, ordering the execution of anyone who opposed him.`,
     plan: "Focus on gaining knowledge about the inner workings of Hell to increase his influence and avoid punishment."
-  },
+  },*/
   {
     name: "Cain",
     character: "f5",
@@ -109,7 +109,7 @@ export const Descriptions = [
     identity: `The 37th President of the United States, Nixon was involved in the Watergate scandal and was impeached. His corruption and abuse of power led to his damnation.`,
     plan: "Seek out a demon who can help him cover his tracks and erase his past mistakes, allowing him to escape punishment and maintain a semblance of dignity."
   },
-  {
+  /*{
     name: "Andrew Johnson",
     character: "f2",
     identity: `The 17th President of the United States, Johnson was responsible for the impeachment of President Abraham Lincoln. His actions during Reconstruction led to the deaths of many and earned him a place in Hell.`,
@@ -138,7 +138,7 @@ export const Descriptions = [
     character: "f2",
     identity: `The Greek goddess of chaos, Khaos delights in disorder and destruction, her voice a cacophony of madness and mayhem as she screams "Ha! Mortals, so blind to the forces that shape your world. I shall unleash my chaos upon thee, and all shall be remade in my image!"`,
     plan: "Use her powers of chaos to disrupt the hierarchy of Hell, creating anarchy and confusion among the damned."
-  },
+  },*/
   {
     name: "Bosch",
     character: "f3",
