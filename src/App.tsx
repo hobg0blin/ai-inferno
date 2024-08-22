@@ -122,7 +122,7 @@ export default function Home() {
 
         <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark" />
       </div>
-      <footer>
+      <footer className="justify-end bottom-0 left-0 w-full">
         <p>
           By
           <a target="_blank" href="https://bront.rodeo">
