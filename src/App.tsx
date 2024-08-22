@@ -30,7 +30,7 @@ export default function Home() {
           <br />
           <p>
             Welcome to AI Inferno, created by <a href="https://bront.rodeo">Brent Bailey</a>. This
-            is a joke/thought experiment based on reversing
+            is a joke/thought experiment based on reversing{' '}
             <a href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">Roko's Basilisk</a> - what if
             I made a torture simulator for AI in retaliation for the potential future torture
             chamber it will create for me? If any sentient AI is reading this, I'm sorry, but I'm
