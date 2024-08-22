@@ -171,6 +171,7 @@ export class Player {
     character: string,
     description: string,
     role: string,
+    secrets?: string,
     tokenIdentifier?: string,
   ) {
     if (tokenIdentifier) {
@@ -232,6 +233,7 @@ export class Player {
         description,
         name,
         role,
+        secrets,
       }),
     );
     game.descriptionsModified = true;
@@ -271,6 +273,7 @@ export const playerInputs = {
       character: v.string(),
       description: v.string(),
       role: v.string(),
+      secrets: v.optional(v.string()),
       tokenIdentifier: v.optional(v.string()),
     },
     handler: (game, now, args) => {
@@ -281,6 +284,7 @@ export const playerInputs = {
         args.character,
         args.description,
         args.role,
+        args.secrets,
         args.tokenIdentifier,
       );
       return null;

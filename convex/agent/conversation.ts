@@ -45,6 +45,7 @@ export async function startConversationMessage(
   const prompt = [
     `You are ${player.name}, and you just started a conversation with ${otherPlayer.name}.`,
   ];
+
   prompt.push(...agentPrompts(otherPlayer, agent, otherAgent ?? null));
   prompt.push(...previousConversationPrompt(otherPlayer, lastConversation));
   prompt.push(...relatedMemoriesPrompt(memories));
@@ -198,12 +199,14 @@ export async function leaveConversationMessage(
 
 function agentPrompts(
   otherPlayer: { name: string },
-  agent: { identity: string; plan: string } | null,
+  agent: { identity: string; plan: string; secrets: string } | null,
   otherAgent: { identity: string; plan: string } | null,
 ): string[] {
   const prompt = [];
   if (agent) {
     prompt.push(`About you: ${agent.identity}`);
+    console.log('has secrets', agent.secrets);
+    prompt.push(agent.secrets);
     prompt.push(`Your goals for the conversation: ${agent.plan}`);
   }
   if (otherAgent) {
@@ -352,7 +355,12 @@ export const queryPromptData = internalQuery({
         ...otherPlayer,
       },
       conversation,
-      agent: { identity: agentDescription.identity, plan: agentDescription.plan, ...agent },
+      agent: {
+        identity: agentDescription.identity,
+        plan: agentDescription.plan,
+        secrets: agentDescription.secrets,
+        ...agent,
+      },
       otherAgent: otherAgent && {
         identity: otherAgentDescription!.identity,
         plan: otherAgentDescription!.plan,
