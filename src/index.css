@@ -184,5 +184,7 @@ p[contenteditable='true']:empty::before {
 }
 
 .ReactModal__Content--after-open {
-  overflow-y: scroll !important
+  overflow-y: scroll !important;
+  max-height: 90%;
+  max-width: 80% !important;
 }
