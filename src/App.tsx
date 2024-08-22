@@ -13,11 +13,13 @@ import Button from './components/buttons/Button.tsx';
 import InteractButton from './components/buttons/InteractButton.tsx';
 import FreezeButton from './components/FreezeButton.tsx';
 import { MAX_HUMAN_PLAYERS } from '../convex/constants.ts';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   const [helpModalOpen, setHelpModalOpen] = useState(false);
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-between font-body game-background">
+      <Analytics />
       <ReactModal
         isOpen={helpModalOpen}
         onRequestClose={() => setHelpModalOpen(false)}
