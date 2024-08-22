@@ -133,6 +133,8 @@ export const joinWorld = mutation({
       name,
       character: characters[Math.floor(Math.random() * characters.length)].name,
       description: `${DEFAULT_NAME} is a human player`,
+      role: `human`,
+      secrets: `${DEFAULT_NAME} is just visiting Hell, and is able to leave. He is working on a book about his experiences in Hell.`,
       // description: `${identity.givenName} is a human player`,
       tokenIdentifier: DEFAULT_NAME,
     });

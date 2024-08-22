@@ -347,6 +347,8 @@ export const queryPromptData = internalQuery({
         throw new Error(`Conversation ${lastTogether.conversationId} not found`);
       }
     }
+    console.log('agent: ', agent);
+    console.log('agentDescription: ', agentDescription);
     return {
       player: { name: playerDescription.name, role: playerDescription.role, ...player },
       otherPlayer: {
@@ -358,7 +360,7 @@ export const queryPromptData = internalQuery({
       agent: {
         identity: agentDescription.identity,
         plan: agentDescription.plan,
-        secrets: agentDescription.secrets,
+        secrets: agentDescription.secrets != undefined ? agentDescription.secrets : '',
         ...agent,
       },
       otherAgent: otherAgent && {

@@ -147,7 +147,7 @@ export const agentInputs = {
         new AgentDescription({
           agentId: agentId,
           identity: description.identity,
-          secrets: description.secrets,
+          secrets: description.secrets != undefined ? description.secrets : '',
           plan: description.plan,
           role: description.role,
         }),

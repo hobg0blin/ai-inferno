@@ -14,7 +14,7 @@ export class AgentDescription {
     this.identity = identity;
     this.plan = plan;
     this.role = role;
-    this.secrets = secrets;
+    this.secrets = secrets != undefined ? secrets : '';
   }
 
   serialize(): SerializedAgentDescription {
