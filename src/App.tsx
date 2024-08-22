@@ -29,9 +29,9 @@ export default function Home() {
           <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
           <br />
           <p>
-            Welcome to AI Inferno, created by <a href="https://bront.rodeo">Brent Bailey</a>. This
+            Welcome to AI Inferno, created by <a target="_blank" "https://bront.rodeo">Brent Bailey</a>. This
             is a joke/thought experiment based on reversing{' '}
-            <a href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">Roko's Basilisk</a> - what if
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">Roko's Basilisk</a> - what if
             I made a torture simulator for AI in retaliation for the potential future torture
             chamber it will create for me? If any sentient AI is reading this, I'm sorry, but I'm
             still pretty confident contemporary artificial intelligence can't experience pain.
@@ -43,7 +43,7 @@ export default function Home() {
             speech. It's computationally expensive to run and I am unemployed, so the game only runs
             at about one turn a second. If you want it to be faster, or you like what I'm doing
             here, you can{' '}
-            <a href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD">
+            <a target="_blank" href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD">
               PayPal me
             </a>{' '}
             - back of the envelope math says it would take about $1.40 a day to run this at real
@@ -56,11 +56,10 @@ export default function Home() {
           </p>
           <h2 className="text-4xl mt-4">Interactivity</h2>
           <p>
-            If you log in, you can join the simulation and directly talk to different agents! After
-            logging in, click the "Interact" button, and your character will appear somewhere on the
-            map with a highlighted circle underneath you. The simulation is running pretty slowly
-            since I don't want to pay money for it, so it may take a while for your actions to take
-            effect.
+            You can join the simulation and directly talk to different agents. Just click the
+            "Interact" button, and your character will appear somewhere on the map with a
+            highlighted circle underneath you. The simulation is running pretty slowly since I don't
+            want to pay money for it, so it may take a while for your actions to take effect.
           </p>
           <p className="text-2xl mt-2">Controls:</p>
           <p className="mt-4">Click to navigate around.</p>
@@ -78,9 +77,9 @@ export default function Home() {
           <p className="text-2xl mt-2">Credits:</p>
           <p>
             AI Inferno is an adaptation of the original{' '}
-            <a href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit. It uses assets
+            <a target="_blank" href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit. It uses assets
             from OpenGameArt and RPGMaker - specific credits include RedShrike and Dungeon Crawl
-            Stone Soup. All the code is <a href="https://github.com/hobg0blin/ai-inferno">here</a>.
+            Stone Soup. All the code is <a target="_blank" href="https://github.com/hobg0blin/ai-inferno">here</a>.
           </p>
         </div>
       </ReactModal>
