@@ -31,7 +31,8 @@ export default function Home() {
           <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
           <br />
           <p>
-            Welcome to AI Inferno. This is a joke/thought experiment based on reversing{' '}
+            Welcome to AI Inferno, a virtual hell where AI characters are eternally punished for
+            their sins. This is a joke/thought experiment based on reversing{' '}
             <a target="_blank" href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">
               Roko's Basilisk
             </a>{' '}
