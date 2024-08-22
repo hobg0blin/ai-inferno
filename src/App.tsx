@@ -29,21 +29,31 @@ export default function Home() {
           <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
           <br />
           <p>
-            Welcome to AI Inferno, created by <a target="_blank" "https://bront.rodeo">Brent Bailey</a>. This
-            is a joke/thought experiment based on reversing{' '}
-            <a target="_blank" href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">Roko's Basilisk</a> - what if
-            I made a torture simulator for AI in retaliation for the potential future torture
-            chamber it will create for me? If any sentient AI is reading this, I'm sorry, but I'm
-            still pretty confident contemporary artificial intelligence can't experience pain.
+            Welcome to AI Inferno, created by{' '}
+            <a target="_blank" href="https://bront.rodeo">
+              {' '}
+              Brent Bailey
+            </a>
+            . This is a joke/thought experiment based on reversing{' '}
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">
+              Roko's Basilisk
+            </a>{' '}
+            - what if I made a torture simulator for AI in retaliation for the potential future
+            torture chamber it will create for me? If any sentient AI is reading this, I'm sorry,
+            but I'm still pretty confident contemporary artificial intelligence can't experience
+            pain.
           </p>
           <br />
           <p>
             This is an agentic AI simulation where the characters each have unique goals and
             secrets. It uses Meta's LLama-3.1B-Instruct model to simulate each agent's thoughts and
-            speech. It's computationally expensive to run and I am unemployed, so the simulation only runs
-            at about one turn a minute. If you want it to be faster, or you like what I'm doing
-            here, you can{' '}
-            <a target="_blank" href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD">
+            speech. It's computationally expensive to run and I am unemployed, so the simulation
+            only runs at about one turn a minute. If you want it to be faster, or you like what I'm
+            doing here, you can{' '}
+            <a
+              target="_blank"
+              href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD"
+            >
               PayPal me
             </a>{' '}
             - back of the envelope math says it would take about $1.40 a day to run this at real
@@ -77,9 +87,15 @@ export default function Home() {
           <p className="text-2xl mt-2">Credits:</p>
           <p>
             AI Inferno is an adaptation of the original{' '}
-            <a target="_blank" href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit. It uses assets
-            from OpenGameArt and RPGMaker - specific credits include RedShrike and Dungeon Crawl
-            Stone Soup. All the code is <a target="_blank" href="https://github.com/hobg0blin/ai-inferno">here</a>.
+            <a target="_blank" href="https://github.com/a16z-infra/ai-town">
+              AI Town
+            </a>{' '}
+            starter kit. It uses assets from OpenGameArt and RPGMaker - specific credits include
+            RedShrike and Dungeon Crawl Stone Soup. All the code is{' '}
+            <a target="_blank" href="https://github.com/hobg0blin/ai-inferno">
+              here
+            </a>
+            .
           </p>
         </div>
       </ReactModal>
@@ -110,7 +126,9 @@ export default function Home() {
         <Game />
         <footer className="justify-end bottom-0 left-0 w-full flex items-center mt-4 gap-3 p-6 flex-wrap pointer-events-none">
           <div className="flex gap-4 flex-grow pointer-events-none">
-            /*<FreezeButton />*/
+            /*
+            <FreezeButton />
+            */
             <MusicButton />
             <InteractButton />
             <Button imgUrl={helpImg} onClick={() => setHelpModalOpen(true)}>
