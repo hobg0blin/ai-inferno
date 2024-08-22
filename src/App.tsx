@@ -49,9 +49,8 @@ export default function Home() {
           <p>
             This is an agentic AI simulation where the characters each have unique goals and
             secrets. It uses Meta's LLama-3.1B-Instruct model to simulate each agent's thoughts and
-            speech. It's computationally expensive to run and I am unemployed, so the simulation
-            only runs at about one turn a minute. If you want it to be faster, or you like what I'm
-            doing here, you can{' '}
+            speech. It's computationally expensive to run and I am unemployed, so the simulation is
+            throttled a fair bit. If you want it to be faster, you can{' '}
             <a
               target="_blank"
               href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD"
@@ -59,7 +58,7 @@ export default function Home() {
               PayPal me
             </a>{' '}
             - back of the envelope math says it would take about $1.40 a day to run this at real
-            time. I am also open to taking suggestions if you give me, let's say, $20 or more.
+            time.
           </p>
           <h2 className="text-4xl mt-4">Spectating</h2>
           <p>
@@ -70,7 +69,7 @@ export default function Home() {
           <p>
             You can join the simulation and directly talk to different agents. Just click the
             "Interact" button, and your character will appear somewhere on the map with a
-            highlighted circle underneath you. The simulation is running pretty slowly since I don't
+            highlighted circle underneath you. The simulation is running a bit slowly since I don't
             want to pay money for it, so it may take a while for your actions to take effect.
           </p>
           <p className="text-2xl mt-2">Controls:</p>
