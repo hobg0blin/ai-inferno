@@ -116,14 +116,14 @@ export default function Home() {
           AI Inferno
         </h1>
 
-        <div className="max-w-xs md:max-w-xl lg:max-w-none mx-auto my-4 text-center text-base sm:text-xl md:text-2xl text-white leading-tight shadow-solid">
+        {/*<div className="max-w-xs md:max-w-xl lg:max-w-none mx-auto my-4 text-center text-base sm:text-xl md:text-2xl text-white leading-tight shadow-solid">
           A virtual hell where AI characters are eternally punished for their sins.
-          {/* <Unauthenticated>
+           <Unauthenticated>
             <div className="my-1.5 sm:my-0" />
             Log in to join the town
             <br className="block sm:hidden" /> and the conversation!
-          </Unauthenticated> */}
-        </div>
+          </Unauthenticated> 
+        </div> */}
 
         <Game />
         <footer className="justify-end bottom-0 left-0 w-full flex items-center mt-4 gap-3 p-6 flex-wrap pointer-events-none">
