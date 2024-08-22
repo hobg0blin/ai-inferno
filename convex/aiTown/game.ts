@@ -44,8 +44,8 @@ const gameStateDiff = v.object({
 type GameStateDiff = Infer<typeof gameStateDiff>;
 
 export class Game extends AbstractGame {
-  tickDuration = 16;
-  stepDuration = 1000;
+  tickDuration = 1000;
+  stepDuration = 60000;
   maxTicksPerStep = 600;
   maxInputsPerStep = 32;
 

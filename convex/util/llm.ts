@@ -15,11 +15,11 @@ export const LLM_CONFIG = {
   // Together.ai config:
   ollama: false,
   url: 'https://api.together.xyz',
-  chatModel: 'meta-llama/Llama-3-8b-chat-hf',
+  chatModel: 'meta-llama/Meta-Llama-3-8B-Instruct-Lite',
   embeddingModel: 'togethercomputer/m2-bert-80M-8k-retrieval',
   embeddingDimension: 768,
   stopWords: ['<|eot_id|>'],
-   //
+  //
 
   /* OpenAI config:
   ollama: false,
