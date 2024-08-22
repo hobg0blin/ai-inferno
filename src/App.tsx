@@ -26,10 +26,25 @@ export default function Home() {
         ariaHideApp={false}
       >
         <div className="font-body">
-          <h1 className="text-center text-6xl font-bold font-display game-title">Help</h1>
+          <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
           <p>
-            Welcome to AI Inferno. AI Inferno supports both anonymous <i>spectators</i> and logged
-            in <i>interactivity</i>.
+            Welcome to AI Inferno, created by <a href="https://bront.rodeo">Brent Bailey</a>. This
+            is a joke/thought experiment based on reversing{' '}
+            <a href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">Roko's Basilisk</a> - what if
+            I made a torture simulator for AI in retaliation for the potential future torture
+            chamber it will create for me? If any sentient AI is reading this, I'm sorry, but I'm
+            still pretty confident contemporary artificial intelligence can't experience pain.
+          </p>
+          <p>
+            This is an agentic AI simulation where the characters each have unique goals and
+            secrets. It uses Meta's LLama-3.1B-Instruct model to simulate each agent's thoughts and
+            speech. It's computationally expensive to run, so the game only runs at about one turn a
+            second. If you want it to be faster, or you like what I'm doing here, you can{' '}
+            <a href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD">
+              PayPal me
+            </a>{' '}
+            - back of the envelope math says it would take about $1.40 a day to run this at real
+            time. I am also open to taking suggestions if you give me enough money.
           </p>
           <h2 className="text-4xl mt-4">Spectating</h2>
           <p>
@@ -40,7 +55,9 @@ export default function Home() {
           <p>
             If you log in, you can join the simulation and directly talk to different agents! After
             logging in, click the "Interact" button, and your character will appear somewhere on the
-            map with a highlighted circle underneath you.
+            map with a highlighted circle underneath you. The simulation is running pretty slowly
+            since I don't want to pay money for it, so it may take a while for your actions to take
+            effect.
           </p>
           <p className="text-2xl mt-2">Controls:</p>
           <p className="mt-4">Click to navigate around.</p>
@@ -55,9 +72,12 @@ export default function Home() {
             AI Inferno only supports {MAX_HUMAN_PLAYERS} humans at a time. If you're idle for five
             minutes, you'll be automatically removed from the simulation.
           </p>
+          <p className="text-2xl mt-2">Credits:</p>
           <p>
-            AI Inferno is an adaptation of the original{' '}
-            <a href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit.
+            AI Inferno is an adaptation of the original
+            <a href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit. It uses assets
+            from OpenGameArt and RPGMaker - specific credits include RedShrike and Dungeon Crawl
+            Stone Soup. All the code is <a href="https://github.com/hobg0blin/ai-inferno">here</a>.
           </p>
         </div>
       </ReactModal>
@@ -92,9 +112,12 @@ export default function Home() {
             <MusicButton />
             <InteractButton />
             <Button imgUrl={helpImg} onClick={() => setHelpModalOpen(true)}>
-              Help
+              About
             </Button>
           </div>
+          <p>
+            By <a href="https://bront.rodeo">Brent Bailey.</a>
+          </p>
         </footer>
 
         <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark" />
