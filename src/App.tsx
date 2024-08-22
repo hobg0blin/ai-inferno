@@ -31,12 +31,7 @@ export default function Home() {
           <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
           <br />
           <p>
-            Welcome to AI Inferno, created by{' '}
-            <a target="_blank" href="https://bront.rodeo">
-              {' '}
-              Brent Bailey
-            </a>
-            . This is a joke/thought experiment based on reversing{' '}
+            Welcome to AI Inferno. This is a joke/thought experiment based on reversing{' '}
             <a target="_blank" href="https://en.wikipedia.org/wiki/Roko%27s_basilisk">
               Roko's Basilisk
             </a>{' '}
@@ -57,8 +52,12 @@ export default function Home() {
             >
               PayPal me
             </a>{' '}
-            - back of the envelope math says it would take about $1.40 a day to run this at real
-            time.
+            - back of the envelope math says it would take about $1.40 a day to run this in real
+            time. Built by{' '}
+            <a target="_blank" href="https://bront.rodeo">
+              Brent Bailey
+            </a>
+            .
           </p>
           <h2 className="text-4xl mt-4">Spectating</h2>
           <p>
