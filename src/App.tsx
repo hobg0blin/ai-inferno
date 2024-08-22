@@ -116,13 +116,13 @@ export default function Home() {
               About
             </Button>
           </div>
-          <p>
-            By <a href="https://bront.rodeo">Brent Bailey</a>.
-          </p>
         </footer>
 
         <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark" />
       </div>
+      <p>
+        By <a href="https://bront.rodeo">Brent Bailey</a>.
+      </p>
     </main>
   );
 }
