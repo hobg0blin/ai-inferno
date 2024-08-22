@@ -27,6 +27,7 @@ export default function Home() {
       >
         <div className="font-body">
           <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
+          <br />
           <p>
             Welcome to AI Inferno, created by <a href="https://bront.rodeo">Brent Bailey</a>. This
             is a joke/thought experiment based on reversing
@@ -35,6 +36,7 @@ export default function Home() {
             chamber it will create for me? If any sentient AI is reading this, I'm sorry, but I'm
             still pretty confident contemporary artificial intelligence can't experience pain.
           </p>
+          <br />
           <p>
             This is an agentic AI simulation where the characters each have unique goals and
             secrets. It uses Meta's LLama-3.1B-Instruct model to simulate each agent's thoughts and
