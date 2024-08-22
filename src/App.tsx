@@ -121,7 +121,7 @@ export default function Home() {
         </footer>
         <footer className="justify-end bottom-0 left-0 w-full">
           <p>
-            By
+            By{' '}
             <a target="_blank" href="https://bront.rodeo">
               Brent Bailey
             </a>
