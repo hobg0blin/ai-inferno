@@ -77,7 +77,7 @@ export default function Home() {
           </p>
           <p className="text-2xl mt-2">Credits:</p>
           <p>
-            AI Inferno is an adaptation of the original
+            AI Inferno is an adaptation of the original{' '}
             <a href="https://github.com/a16z-infra/ai-town">AI Town</a> starter kit. It uses assets
             from OpenGameArt and RPGMaker - specific credits include RedShrike and Dungeon Crawl
             Stone Soup. All the code is <a href="https://github.com/hobg0blin/ai-inferno">here</a>.
