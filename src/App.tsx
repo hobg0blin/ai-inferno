@@ -120,9 +120,15 @@ export default function Home() {
 
         <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark" />
       </div>
-      <p>
-        By <a href="https://bront.rodeo">Brent Bailey</a>.
-      </p>
+      <footer>
+        <p>
+          By
+          <a target="_blank" href="https://bront.rodeo">
+            Brent Bailey
+          </a>
+          .
+        </p>
+      </footer>
     </main>
   );
 }
