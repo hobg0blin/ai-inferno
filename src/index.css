@@ -182,3 +182,7 @@ p[contenteditable='true']:empty::before {
 .shape-top-left-corner {
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+
+.ReactModal__Content--after-open {
+  overflow-y: scroll !important
+}
