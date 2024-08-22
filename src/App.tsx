@@ -110,7 +110,7 @@ export default function Home() {
         <Game />
         <footer className="justify-end bottom-0 left-0 w-full flex items-center mt-4 gap-3 p-6 flex-wrap pointer-events-none">
           <div className="flex gap-4 flex-grow pointer-events-none">
-            <FreezeButton />
+            /*<FreezeButton />*/
             <MusicButton />
             <InteractButton />
             <Button imgUrl={helpImg} onClick={() => setHelpModalOpen(true)}>
