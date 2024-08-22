@@ -40,8 +40,8 @@ export default function Home() {
           <p>
             This is an agentic AI simulation where the characters each have unique goals and
             secrets. It uses Meta's LLama-3.1B-Instruct model to simulate each agent's thoughts and
-            speech. It's computationally expensive to run and I am unemployed, so the game only runs
-            at about one turn a second. If you want it to be faster, or you like what I'm doing
+            speech. It's computationally expensive to run and I am unemployed, so the simulation only runs
+            at about one turn a minute. If you want it to be faster, or you like what I'm doing
             here, you can{' '}
             <a target="_blank" href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD">
               PayPal me
