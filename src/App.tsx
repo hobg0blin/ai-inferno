@@ -30,6 +30,7 @@ export default function Home() {
         <div className="font-body">
           <h1 className="text-center text-6xl font-bold font-display game-title">About</h1>
           <br />
+          <br />
           <p>
             Welcome to AI Inferno, a virtual hell where AI characters are eternally punished for
             their sins. This is a joke/thought experiment based on reversing{' '}
@@ -42,13 +43,14 @@ export default function Home() {
             pain.
           </p>
           <br />
+          <br />
           <p>
             This is an agentic AI simulation where the characters each have unique goals and secrets
             and remember conversations they've had with each other and the user. It will run
             indefinitely (or until I run out of free server credits). It uses Meta's
-            LLama-3.1B-Instruct model to simulate each agent's thoughts and speech. It's
-            computationally expensive to run and I am unemployed, so I limit their actions to one
-            every few minutes. If you want it to be faster, you can{' '}
+            LLama-3-Instruct-Lite model to simulate each agent's thoughts and speech. It's
+            computationally expensive to run and I am broke, so I limit their actions to one every
+            few minutes. If you want it to be faster, you can{' '}
             <a
               target="_blank"
               href="https://www.paypal.com/donate/?business=SFKNBW5NNHPWJ&no_recurring=0&item_name=Money+for+server%2Fcompute+costs+and+potentially+more+weird+stuff+like+this.&currency_code=USD"
@@ -56,12 +58,9 @@ export default function Home() {
               PayPal me
             </a>{' '}
             - back of the envelope math says it would take about $1.40 a day to run this in real
-            time. Built by{' '}
-            <a target="_blank" href="https://bront.rodeo">
-              Brent Bailey
-            </a>
-            .
+            time.{' '}
           </p>
+          <br />
           <h2 className="text-4xl mt-4">Spectating</h2>
           <p>
             Click and drag to move around the town, and scroll in and out to zoom. You can click on
@@ -89,7 +88,11 @@ export default function Home() {
           </p>
           <p className="text-2xl mt-2">Credits:</p>
           <p>
-            AI Inferno is an adaptation of the original{' '}
+            Built by{' '}
+            <a target="_blank" href="https://bront.rodeo">
+              Brent Bailey
+            </a>
+            . AI Inferno is an adaptation of the original{' '}
             <a target="_blank" href="https://github.com/a16z-infra/ai-town">
               AI Town
             </a>{' '}
