@@ -38,9 +38,7 @@ export default function Home() {
               Roko's Basilisk
             </a>{' '}
             - what if I made a torture simulator for AI in retaliation for the potential future
-            torture chamber it will create for me? If any sentient AI is reading this, I'm sorry,
-            but I'm still pretty confident contemporary artificial intelligence can't experience
-            pain.
+            torture chamber it will create for me? I apologize to any sentient AI reading this.{' '}
           </p>
           <br />
           <br />
